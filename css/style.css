@@ -1,0 +1,674 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #000000;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header Section Start */
+.header {
+    background-image: url('../images/header.jpg');
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-btn {
+    /* display: inline-block; */
+    /* border: none; */
+    /* background-color: #000000; */
+    /* color: #fff; */
+    padding: 20px 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content h4 {
+    color: #00ed82;
+    margin-top: 40px;
+}
+
+.header-content img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.header-text-1 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-text-2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.head-btn {
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.head-btn:hover {
+    background-color: #d3cccc;
+    opacity: 0.7;
+}
+
+.header-text-3 {
+    font-size: 10px;
+    margin-top: 20px;
+    color: #d3cccc;
+}
+
+@media screen and (max-width: 720px){
+    .header{
+        background-size: contain;
+        background-position: center;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .login-btn{
+        font-size: 25px;
+    }
+
+    .header-content img{
+        width: 200px;
+    }
+
+    .header-text-1{
+        font-size: 15px;
+    }
+
+    .header-text-2{
+        font-size: 15px;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .head-btn{
+        padding: 15px 35px;
+    }
+}
+
+/* Header Section End */
+
+
+/* Sub-Heading Section Start */
+.sub-heading {
+    background-color: #0D3640;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.sub-heading img {
+    width: 100%;
+}
+
+.sub-heading-center {
+    text-align: center;
+}
+
+.sub-heading-center h4 {
+    color: #00ed82;
+}
+
+.sub-heading-center h3 {
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.sub-heading-center a {
+    color: #d3cccc;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sub-heading-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-heading-btn {
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sub-heading-link {
+    color: #d3cccc;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px){
+    .sub-heading{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-heading img{
+        margin-bottom: 20px;
+
+    }
+}
+
+/* Sub-Heading Section End */
+
+
+/* Plans Section Start */
+.plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+}
+
+.plans h4 {
+    color: #00ed82;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.plans-text {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.plans-paragraph {
+    font-size: 25px;
+    text-align: center;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+}
+
+.card-1 {
+    background-image: url(../images/cover-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card-2 {
+    background-image: url(../images/cover-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card-3 {
+    background-image: url(../images/cover-3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card-4 {
+    background-image: url(../images/cover-4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card-text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card-text-div {
+    font-weight: bold;
+}
+
+.card-text h4 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+    .plans-text{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .plans-paragraph{
+        font-size: 20px;
+    }
+
+    .cards{
+        /* display: grid; */
+        /* grid-template-columns: repeat(4, 1fr); */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4{
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 1120px){
+    .cards{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4{
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Plans Section End */
+
+
+/* Live-tv Section Start */
+.live-tv {
+    padding: 40px;
+}
+
+.live-tv-border{
+    border: 5px solid #00ed82;
+    border-radius: 10px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-tv-border h4{
+    color: #00ed82;
+    letter-spacing: 1px;
+}
+
+.live-tv-text{
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+.live-tv-paragraph{
+    max-width: 800px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.live-tv-terms{
+    font-size: 10px;
+    color: #d3cccc;
+    margin-top: 30px;
+}
+
+.live-tv-border a{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1064px){
+    .live-tv-text{
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    .live-tv-border{
+        padding: 50px;
+    }
+
+    .live-tv-text{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .live-tv-paragraph{
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .live-tv-terms{
+        text-align: center;
+    }
+
+    .live-tv-border a{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Live-tv Section End */
+
+
+/* Live Sport Section Start */
+.live-sport{
+    background-image: url('../images/live-sports.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.live-sport-contents{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    max-width: 550px;
+}
+
+.live-sport-text{
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.live-sport-paragraph{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.live-sport-logos{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    /* border: 2px solid yellow; */
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-sport-logos div{
+    background-image: url("../images/network-logo-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live-sport-logos div img{
+    width: 40px;
+}
+
+.live-sports-terms{
+    /* border:  2px solid tomato; */
+    font-size: 10px;
+    color: #d3cccc;
+    position: absolute;
+    top: 480px;
+    left: 100px;
+}
+
+@media screen and (max-width: 720px){
+
+    .live-sport-contents{
+        left: 30px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+    }
+    .live-sport-text{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .live-sport-paragraph{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .live-sports-terms{
+        text-align: center;
+    }
+}
+/* Live Sport Section End */
+
+
+/* Footer Section Start */
+.footer{
+    background-color: #f0eeee;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #f0eeee;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer-links ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-spacing{
+    max-width: 1000px;
+    margin: auto;
+    /* border: 2px solid yellow; */
+}
+
+.footer-line{
+    border-top: 1px solid #d3cccc;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer-social-icons{
+    margin-top: 30px;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: #807c7c;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 720px){
+    .footer-links{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ul-1,
+    .ul-2,
+    .ul-3,
+    .ul-4,
+    .ul-5{
+        margin-bottom: 20px;
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-social-icons{
+        text-align: center;
+    }
+
+}
+/* Footer Section End */
+
+
+/* Login Form Section Start */
+.login-form{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 450px;
+    z-index: 1000;
+    height: 100vh;
+    width: 30%;
+    background-color: #fff;
+    color: #000000;
+    animation: loginanimation 1s;
+    /* display: flex !important;
+    justify-content: center;
+    align-items: center; */
+}
+
+.login-form-box{
+    /* margin: 0 auto; */
+    /* width: 400px; */
+    /* position: relative; */
+    /* height: 100vh; */
+}
+
+.login-form-body{
+    padding: 50px;
+}
+
+.login-form-body h2{
+    margin-bottom: 30px;
+    color: #00ed82;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+}
+
+.login-form-body label{
+    font-weight: bold;
+    /* margin-bottom: 30px !important; */
+}
+
+.login-form-body input{
+    padding: 20px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-color: #00ed82;
+    border-radius: 5px;
+    opacity: 0.5;
+    /* border: none; */
+}
+
+.fa-solid{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.login-reset{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-btn-1{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #00ed82;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login-footer{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@keyframes loginanimation{
+    from{
+        opacity: 0;
+        color: #0D3640;
+    }
+    to{
+        opacity: 1;
+        color: #00ed82;
+    }
+}
+/* Login Form Section End */
